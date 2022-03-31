@@ -19,7 +19,7 @@ int main() {
         id[i]=i;
     }
     v = calloc(N, sizeof(int));
-    
+
     rellenar(v);
     pthread_mutex_init(&mutex, NULL);
     for (int i =0;i<hilos;i++){
@@ -29,7 +29,7 @@ int main() {
     {
         pthread_join(hilo[i], NULL);
     }
-    
+
     printf("mayor valor: %d\n",mayor);
     pthread_mutex_destroy(&mutex);
     free(v);//libera el arreglo
@@ -47,14 +47,10 @@ void *buscar(void *arg) {
         pthread_mutex_lock(&mutex);
         if (v[i]>mayor)
         {
-            
             mayor=v[i];
             printf("encontrado nuevo mayor en la posicion %d en el hilo %d , valor= %d\n",i,*id, v[i]);
-            
         }
         pthread_mutex_unlock(&mutex);
-
-        
     }
     pthread_exit(NULL);
 }
@@ -71,5 +67,5 @@ void rellenar(int* v){
 
     v[rand() % N] = 10000;
 
-    
+
 }

@@ -40,8 +40,7 @@ int main(int argc, char *argv[])
 
     srand(time(NULL));
 
-    printf("Ingrese el tamaño del arreg
-    lo: ");
+    printf("Ingrese el tamaño del arreglo: ");
     scanf("%d", &size);
 
     array = (int *)malloc(sizeof(int) * size);
