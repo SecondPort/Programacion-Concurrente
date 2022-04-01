@@ -63,7 +63,7 @@ int main (int argc, char *argv[]) {
 	printf("Semaforo cerrado\n");
       }
     }
-    
+
     if (!error) {
       error = sem_unlink("/semBinario");
       if (error) {
@@ -74,7 +74,6 @@ int main (int argc, char *argv[]) {
       }
     }
   }
-
   return error;
 }
 
