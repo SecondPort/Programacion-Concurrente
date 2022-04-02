@@ -9,8 +9,6 @@ delivery que lleva los pedidos a los clientes,
 El encargado atiende los pedidos que llegan por telefono separados un tiempo aleatorio. El cocinero prepara el pedido, demorando un tiempo diferente según la comida solicitada; solo puede preparar un pedido por vez. El delivery entrega los pedidos a los clientes (de a uno por vez), demorando un tiempo diferente (aleatorio) según la distancia, y al regresar entrega el monto del pedido al encargado.
 
 Se debe sincronizar la interacción entre los hilos utilizando MUTEX según la necesidad (revisar Split Mutex).
-
-la cantidad de pedidos no debe ser mayor a 10
 */
 
 #include <stdio.h>
