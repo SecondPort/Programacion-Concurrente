@@ -79,7 +79,7 @@ void *ProcesoHijo (void *b) {
     if (!error) {
       error = sem_wait(bb->escribiendo);
     }
-    if (!error) {      
+    if (!error) {
       bb->buf[bb->fin] = (i < ELEMENTOS-1) ? rand() % 100 : -1 ;
       printf("HIJO %p -> %02d (idx=%2d)\n", (void *)(pthread_self()), bb->buf[bb->fin], bb->fin);
       bb->fin = ++bb->fin % ELEMENTOS;
