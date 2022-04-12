@@ -1,1 +1,1 @@
-Repositorio dedicado a la materia Programacion Concurrente, de la Universidad Blas Pascal
+Repositorio dedicado a almacenar trabajos de la materia Programacion Concurrente, de la Universidad Blas Pascal
