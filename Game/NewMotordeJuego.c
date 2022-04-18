@@ -1,16 +1,3 @@
-/* Se debe realizar el motor de un juego que denominaremos "Delivery". Este juego simulará la actividad de un local de comidas en el cual ingresan los pedidos por teléfono y los empleados tienen que preparar y entregar lo indicado.
-
-En esta primer etapa se deberá trabajar sobre cuatro tipos de hilos:
-encargado que da curso a los pedidos de los clientes y, luego de entregado el pedido, guarda el cobro en la caja,
-telefono que genera los pedidos de los clientes,
-cocinero que prepara la comida,
-delivery que lleva los pedidos a los clientes,
-
-El encargado atiende los pedidos que llegan por telefono separados un tiempo aleatorio. El cocinero prepara el pedido, demorando un tiempo diferente según la comida solicitada; solo puede preparar un pedido por vez. El delivery entrega los pedidos a los clientes (de a uno por vez), demorando un tiempo diferente (aleatorio) según la distancia, y al regresar entrega el monto del pedido al encargado.
-
-Se debe sincronizar la interacción entre los hilos utilizando MUTEX según la necesidad (revisar Split Mutex).
-*/
-
 #include <stdio.h>
 #include <unistd.h>
 #include <pthread.h>
